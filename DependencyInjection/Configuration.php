@@ -16,9 +16,8 @@ class Configuration implements ConfigurationInterface
      * {@inheritDoc}
      */
     public function getConfigTreeBuilder()
-    {
-        $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('liuggio_excel');
+    {        
+        $treeBuilder = new TreeBuilder('liuggio_excel');
 
         return $treeBuilder;
     }
